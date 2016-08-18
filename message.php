@@ -16,7 +16,7 @@ if(!$message){
 }
 $to      = 'otel-alena@yandex.ru';
 $subject = 'Обращение с сайта';
-$message = 'Текстовое сообщение с сайта: "'.$message.'".<br> Номер телефон:'.$phone.'. Email:'.$email.'. Имя:'.$name;
+$message = 'Текстовое сообщение с сайта: "'.$message.'". Номер телефон:'.$phone.'. Email:'.$email.'. Имя:'.$name;
 $headers = 'From: site@otel-alena.ru' . "\r\n" .
     'Reply-To: site@otel-alena.ru' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
