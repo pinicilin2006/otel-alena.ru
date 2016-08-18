@@ -1,0 +1,581 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Гостевой дом - "Алёна"</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.1.custom.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="js/select.js"></script> 
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<!-- <script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script> -->
+	
+	<script type="text/javascript">$($.date_input.initialize);</script>
+	
+</head>
+
+<body>
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<div id="logo" class="fleft">
+			<a href="javascript:void(0);"><img src="images/logo.png" /></a>
+		</div>
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<!-- <li data-slide="1">Главная</li> -->
+				<li data-slide="2">О нас</li>
+				<li data-slide="4">Услуги</li>
+				<li data-slide="6">Фото</li>
+				<li data-slide="20">Цены</li>
+				<li data-slide="10">Контакты</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="padding_slide1">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<div class="filtr_bg">
+					<p>Гостиница, в которой хочется остаться!</p>
+					<h1>Гостевой дом "Алёна"</h1>
+					<h2>Здесь есть все то, что вы искали для проведения <br> отпуска и каникул на море!</h2>
+					<h2><a href="tel:+79222535818">8(922)253-58-18</a><br><a href="tel:+79034541347">8(903)454-13-47</a></h2>
+				</div>
+				<!-- <a class="button" title="" data-slide="8">Book Now</a> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- <div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide8">
+		<div class="container clearfix">
+			
+			<div id="content" class="grid_12">
+				<div id="content" class="grid_12">
+					<h1>Book Now</h1>
+					<h2>When would you like to stay at HotelName?</h2>
+				</div>
+				
+				<div class="order_block">
+					
+					<form method="post" action="index.html">
+						<label>Room:</label>
+						<select name="fancySelect" class="makeMeFancy">
+							<option value="0" selected="selected" data-skip="1">Select Room Type</option>
+							<option value="1" data-html-text="Lorem Ipsum&lt;i&gt;&lt;/i&gt;">Lorem Ipsum</option>
+							<option value="2" data-html-text="Dolor sit amet&lt;i&gt;&lt;/i&gt;">Dolor sit amet</option>
+							<option value="3" data-html-text="Sed ut perspiciatis&lt;i&gt;&lt;/i&gt;">Sed ut perspiciatis</option>
+							<option value="4" data-html-text="Nemo enim ipsam voluptatem&lt;i&gt;&lt;/i&gt;">Nemo enim ipsam voluptatem</option>
+						</select>
+						<label>From:</label><input type="text" id="datepicker" />
+					<label>To:</label><input type="text" id="datepicker2" />
+					<label>Email:</label><input class="email_form" type="text" name="text" />					
+					<input type="submit" class="form_btn contact_btn send_btn" value="Book" />
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+
+
+<div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+	
+		<div id="content" class="grid_12">
+			<p>Гостевой дом «АЛЁНА» находится на живописном черноморском побережье ближайшего пригорода Анапы – в курортном районе Джемете, на второй линии от Пионерского проспекта. Песчаный пляж в <b>15 минутах</b> ходьбы.</p>
+		</div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide2">
+		<div class="container clearfix">
+			
+			<div id="content" class="grid_12">
+				<h1>О нас</h1>
+				<h2>Все номера отличаются высоким уровнем комфорта и удовлетворят самого требовательного постояльца.</h2>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+
+		<div id="content" class="grid_12">
+			<img class="about_img" src="images/photo/main_2.jpg" alt="" />
+			<h4>О гостевом доме</h4>
+			<p>Гостевой дом «АЛЁНА» впервые распахнул свои двери отдыхающим в июле 2016 года. Новизна, комфорт и ощущение домашнего уюта чувствуются как только переступаешь порог этой красивой мини-гостиницы. Современный фасад и не менее привлекательный интерьер помещений настраивают на качественный отдых. Все новое, сделано по индивидуальным решениям, без какой-либо экономии на комфорте и удобстве отдыхающих.</p>
+			<p>
+			<h4>Расположение</h4>
+			<p>Гостевой дом «АЛЁНА»находится на живописном черноморском побережье ближайшего пригорода Анапы – в курортном районе Джемете, на второй линии от Пионерского проспекта. Песчаный пляж в 15 минутах</span> ходьбы. В этих местах множество детских здравниц, здесь самые удобные, безопасные и хорошо оснащенные пляжи. Вся туристическая инфраструктура достаточно развита и подчинена веселому и здоровому семейному отдыху. По дороге на песчаный пляж находятся: продуктовые магазины, летние кафе и рестораны, экскурсионные киоски, продаются фрукты, овощи, пляжный инвентарь и многое другое. На маршрутном такси можно проехать к аквапарку, дельфинарию, набережной и в центр города Анапа.</p>
+			<hr>
+			<h4>Территория</h4>
+			<p>Благоустроенная территория располагает с спокойному отдыху. Внутренний двор вымощен тротуарной плиткой и устелен искусственным изумрудным газоном. К вашим услугам большой открытый бассейн! С большим удовольствием каждый из вас окунется в чистую прохладу в жаркий полдень. Около бассейна имеются шезлонги для принятия солнечных ванн и зонты.</p>
+			<hr>
+			<h4>Номерной фонд</h4>
+			<ul>
+			  <li>«СТАНДАРТ» - 2-х и 3-х местные однокомнатные номера со всеми удобствами – основа номерного фонда гостевого дома.</li>
+			  <li>«СТУДИЯ» - 4-х местный номер с собственной кухней (2 номера).</li>
+			  <li>«ЛЮКС» - просторный двухкомнатный номер вместимостью до 4-х человек (1 номер).</li>
+			</ul>
+			 <b>Вне зависимости от категории, в каждом номере имеется: санузел (душ, туалет), сплит-система, телевизор, холодильник, WI-FI.</b>
+			</p>
+			<hr>
+			<h4>Питание</h4>
+			<p>В гостевом доме имеется кухня для самостоятельного приготовления пищи: электроплита, микроволновая печь, чайник, холодильник, необходимая посуда и прочие кухонные принадлежности.</p>
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide4">
+		<div class="container clearfix">
+			
+			<div id="content" class="grid_12">
+				<h1><span>Услуги</span></h1>
+				<h2>Гостеприимство в любое время года!</h2>			
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+
+		<div class="grid_4">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block1"></div>
+				<p>Скидка 10%</p>
+				При размещение более чем на 10 дней предоставляется скидка 10%
+			</a>
+		</div>
+		<div class="grid_4">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block1"></div>
+				<p>Бесплатный трансфер</p>
+				Бесплатный трансфер до жд и аэропорта
+			</a>
+		</div>
+		<div class="grid_4 omega">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block1"></div>
+				<p>Бесплатная автостоянка</p>
+				Бесплатная автостоянка во дворе для вашего автомобиля
+			</a>
+		</div>
+		<div class="grid_4">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block1"></div>
+				<p>Бассейн</p>
+				На территории гостевого дома имеется большой бассейн
+			</a>
+		</div>
+		<div class="grid_4 omega">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block1"></div>
+				<p>WI-FI</p>
+				 Бесплатный доступ в интернет
+			</a>
+		</div>
+		<div class="grid_4">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block1"></div>
+				<p>Бытовые удобства</p>
+				Всем клиентом доступна прачечная, гладильная доска и утюг
+			</a>
+		</div>				
+		<!-- <div class="grid_4">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block2"></div>
+				<p>Bed & Breakfast</p>
+				Vivamus rhoncus facilisis orci et sagittis. Aliquam mollis commodo auctor. Aenean id neque libero
+			</a>
+		</div>
+		<div class="grid_4 omega">
+			<a class="serv_block" href="javascript:void(0);" alt="">
+				<div class="icon_block3"></div>
+				<p>Spa</p>
+				Donec in ligula eget quam elementum consectetur id vel ante. Donec tristique, mi ac faucibus
+			</a>
+		</div> -->
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide6">
+		<div class="container clearfix">
+			
+			<div id="content" class="grid_12">
+				<h1><span>Фото</span></h1>
+				<h2>Всё для Вашего удобства!</h2>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+	
+		<div>
+			<!-- gallery_block -->
+			<ul class="gallery-list">                                  
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/main.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/main.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/41.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/41.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/1.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/1.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/3.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/3.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/2.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/2.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/8.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/8.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/11.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/11.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/10.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/10.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/16.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/16.jpg" alt="" /></a>
+					</div>
+				</li>	
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/22.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/22.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/23.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/23.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/28.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/28.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/27.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/27.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/21.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/21.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/19.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/19.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/40.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/40.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/38.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/38.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/35.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/35.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/41.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/41.jpg" alt="" /></a>
+					</div>
+				</li>
+				<li class="grid_3">
+					<div class="hover_img">
+						<a href="images/photo/33.jpg" rel="prettyPhoto[portfolio1]"><img src="images/photo/33.jpg" alt="" /></a>
+					</div>
+				</li>											
+				<div class="clear"></div>
+			</ul>   
+			<!-- //gallery_block -->   
+		</div>
+	
+	</div>
+</div>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="slide" id="slide20" data-slide="20" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide4">
+		<div class="container clearfix">
+			
+			<div id="content" class="grid_12">
+				<h1><span>ЦЕНЫ</span></h1>
+				<h2>Доступный отдых каждому!</h2>			
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="slide" id="slide21" data-slide="21" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		<div class="grid_12">
+			<table class="table_price">
+				<!-- <thead> -->
+				<caption>Стоимость проживания</caption>
+					<tr>
+						<th>Номера/даты</th>
+						<th>01.05-20.05</th>
+						<th>21.05-10.06</th>
+						<th>11.06-30.06</th>
+						<th>01.07-28.08</th>
+						<th>29.08-10.09</th>
+						<th>11.09-30.09</th>
+					</tr>
+<!-- 				</thead>
+				<tbody> -->
+					<tr>
+						<td>2-х местный с вентилятором</td>
+						<td>800</td>
+						<td>1000</td>
+						<td>1400</td>
+						<td>1800</td>
+						<td>1400</td>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td>2-х местный с кондиционером</td>
+						<td>1100</td>
+						<td>1400</td>
+						<td>1800</td>
+						<td>2400</td>
+						<td>1800</td>
+						<td>1400</td>
+					</tr>
+					<tr>
+						<td>2-х местный с дополнительным местом</td>
+						<td>1400</td>
+						<td>1800</td>
+						<td>2200</td>
+						<td>2800</td>
+						<td>2200</td>
+						<td>1800</td>
+					</tr>
+					<tr>
+						<td>4-х местный (большая кравать и диван, 1 комната)</td>
+						<td>1600</td>
+						<td>2000</td>
+						<td>2600</td>
+						<td>3400</td>
+						<td>2600</td>
+						<td>2000</td>
+					</tr>
+					<tr>
+						<td>4-х местный (2 комнаты)</td>
+						<td>1800</td>
+						<td>2200</td>
+						<td>3000</td>
+						<td>3800</td>
+						<td>3000</td>
+						<td>2200</td>
+					</tr>
+					<tr>
+						<td>4-х местный ЛЮКС (с кухней и стиральной машиной)</td>
+						<td>2200</td>
+						<td>2600</td>
+						<td>3400</td>
+						<td>4200</td>
+						<td>3400</td>
+						<td>2600</td>
+					</tr>
+					<tr>
+						<td colspan="7">
+						При размещение более чем на 10 дней - скидка 10%
+						<br>
+						Проживание ребёнка без предоставление дополнительного места - 200 рублей в сутки
+						<br>
+						Бронирование номера - 1000 рублей
+						<br>
+						Цены ориентировачные. Уточняйте по телефону либо по email
+						</td>
+					</tr>					
+				<!-- </tbody> -->
+			</table>
+		</div>
+	</div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide10">
+		<div class="container clearfix">
+			
+			<div id="content" class="grid_12">
+				<h1><span>КОНТАКТЫ</span></h1>
+			<h2>Мы доступны в любой время дня и ночи</h2>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+	</div>
+	
+</div>
+
+
+
+<div class="slide" id="slide11" data-slide="11" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div class="grid_3 contact_det_block">
+			<p>Вы можете связатся с нами влюбым удобным для вас способом в любое время дня и ночи</p>
+			<ul class="foot_block_intouch">
+				<li class="touch_phone"><p><a href="tel:+79222535818">8(922)253-58-18</a></p></li>
+				<li class="touch_phone"><p><a href="tel:+79034541347">8(903)454-13-47</a></p></li>
+<!-- 				<li class="touch_clock"><p>Mon - Sat 9:00am - 6:00 pm</p></li> -->
+				<li class="touch_mail"><a href="mailto:lena.kovalevaem@mail.ru">lena.kovalevaem@mail.ru</a></li>
+				<!-- <li class="touch_site"><a href="javascript:void(0);">www.lorem.com</a></li> -->
+				<li class="touch_adress"><p>Анапа, ул.Верхняя дорога 83б</p></li>
+			</ul>
+		</div>
+		<div class="grid_9 omega">
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="index.html">
+						<input type="text" name="name" value="" placeholder="Имя" />
+						<input type="text" name="subject" value="" placeholder="Телефон" />
+						<input type="text" name="email" value="" placeholder="Email" />
+						<textarea name="message" id="message" placeholder="Сообщение"></textarea>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Очистить форму" />
+						<input type="submit" class="contact_btn send_btn" value="Отправить сообщение" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	
+	</div>
+	
+	<!-- <div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed"></iframe></div> -->
+	<div id="map_block">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0h2hV2WIoPx-O_KRPYbjyVFCVx-sB0ex&amp;width=100%&amp;height=720&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+
+	</div>
+	
+</div>
+
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">Гостевой дом "Алёна" &copy; 2016 | <a href="www.h-aa.ru">Изготовление сайта: www.h-aa.ru</a> </div>
+		<div id="back_top"><a class="button" title="" data-slide="1"></a></div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
