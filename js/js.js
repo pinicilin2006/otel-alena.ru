@@ -69,7 +69,24 @@ jQuery(document).ready(function ($) {
 		}
 	);
 	
-	
+    //Отправка сообщения с сайта
+     function send_message(){
+        var a = $("#ajax-contact-form").serialize();
+        $.ajax({
+            type: "POST",
+            url: 'message.php',
+            data: a,
+            success: function(data) {
+                $("#fields").slideUp(100);
+                $("#note").html(data);
+            }
+        });
+        return false;
+    }   
+    $('#ajax-contact-form').submit(function( event ) {
+        send_message();
+        return false;
+    });
 	
 });
 
