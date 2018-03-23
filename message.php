@@ -14,7 +14,7 @@ if(!$message){
 	echo 'Отсутствует текст сообщения';
 	exit();
 }
-$to      = 'otel-alena@yandex.ru';
+$to      = 'gostevoi_dom_anapa@mail.ru';
 $subject = 'Обращение с сайта';
 $message = 'Текстовое сообщение с сайта: "'.$message.'". Номер телефон:'.$phone.'. Email:'.$email.'. Имя:'.$name;
 $headers = 'From: site@otel-alena.ru' . "\r\n" .
